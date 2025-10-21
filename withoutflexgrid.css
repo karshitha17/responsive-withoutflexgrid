@@ -1,1 +1,109 @@
+body {
+  background-color: rgb(180,180,180);
+  font-family: Arial, sans-serif;
+}
+nav {
+  display:flex; 
+  justify-content:center; 
+  font-size:13px; 
+  margin:10px;
+}
+a {
+  text-decoration: none;
+  color: rgb(60,60,60);
+  background-color: rgb(240,240,240);
+  margin:6px; 
+  padding:10px 120px; 
+  border-radius:6px;
+}
+div{ 
+  background-color:rgb(240,240,240); 
+  padding:39px; 
+  margin:10px; 
+  border-radius:6px; 
+} 
+main img {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;   
+}
 
+main aside {
+  display: inline-block;
+  width: 20%;
+  align-items:center; 
+  vertical-align: top;
+  padding:20px;
+}
+
+aside div {
+  display: inline-block; 
+  background-color: rgb(240,240,240);
+  margin: 15px;
+  border-radius: 6px;
+}
+
+button {
+  background-color: rgb(60,60,60);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+section{
+  width:100%;
+  padding:10px;
+}
+section div {
+  display: inline-block;   
+  width: 22%;             
+  margin: 10px;            
+  background-color: rgb(240,240,240);
+  padding: 39px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+p {
+  font-size:13px;
+  color: rgb(100,100,100);
+}
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  a {
+    display: block;
+    width: 80%;
+    margin: 6px auto;
+  }
+
+  aside div {
+    width: 45%;
+  }
+
+  section div {
+    width: 90%;
+    padding:20px;
+  }
+}
+@media (max-width: 600px) {
+  a {
+    display: block;
+    width: 90%;
+    margin: 6px auto;
+    padding:10px;
+  }
+
+  aside div {
+    display: block; /* stack vertically */
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  section div {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
